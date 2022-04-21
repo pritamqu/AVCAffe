@@ -1,0 +1,5 @@
+__pycache__/
+.spyproject/
+temp*
+zip_unzip_files.py
+codes/

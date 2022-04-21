@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+    google.load("jquery", "1.3.2");
+</script>
+
+<!-- 
+    quick html converter
+    https://htmled.it/
+ -->
+<html>
+
+<head>
+    <title>AVCAffe</title>
+    <meta property="og:title"
+        content="AVCAffe: A Large Scale Audio-Visual Dataset of Cognitive Load and Affect for Remote Work" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <br>
+    <center>
+        <img width="360" alt="AVCAffe" title="AVCAffe" src="./assets/images/logo.png"><br>
+        <span style="font-size:46px">AVCAffe: A Large Scale Audio-Visual Dataset of Cognitive Load and Affect for Remote Work</span>
+        <br><br>
+        <span style="font-size:20px">Preprint. Under review.</span>
+        <br><br>
+        <table align=center>
+            <tr>
+                <span style="font-size:20px"><a href="https://www.pritamsarkar.com">Pritam Sarkar</a></span> 
+                &nbsp; <span style="font-size:20px"><a href="">Jordan Posen</a></span>
+                &nbsp; <span style="font-size:20px"><a href="">Ali Etemad</a></span>
+            </tr>
+        </table>
+        
+
+        <table align=center>
+            <tr>
+                <td align=center>
+                    <center>
+                        <span style="font-size:18px"><a href="https://arxiv.org/pdf/2203.00000.pdf"> [Paper]</a></span>
+                    </center>
+                </td>
+                <td align=center>
+                    <center>
+                        <span style="font-size:18px"><a href="https://github.com/pritamqu/AVCAffe"> [Code]</a></span>
+                    </center>
+                </td>
+                <td align=center>
+                    <center>
+                        <span style="font-size:18px"><a href="https://pritamqu.github.io/AVCAffe/"> [Project Page]</a></span>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    	  
+
+
+	<!-- <h1>Overview</h1> -->
+    <br><br>
+	<img width="960" alt="AVCAffe" title="AVCAffe" src="./assets/images/avcaffe.png">
+    
+    <!--------------------- Abstract --------------------->
+	<table align=center>
+        <center>
+            <h1>
+                Abstract
+            </h1>
+        </center>
+        <tr>
+            <p style="text-align: justify;">
+            We introduce AVCAffe, the first Audio-Visual dataset consisting of Cognitive load and Affect attributes. We record AVCAffe by simulating remote work scenarios over a video-conferencing platform, where subjects collaborate to complete a number of cognitively engaging tasks. AVCAffe is the largest originally collected (not collected from the Internet) affective dataset in English language. We recruit 106 participants from 18 different countries of origin, spanning an age range of 18 to 57 years old, with a balanced male-female ratio. AVCAffe comprises a total of 108 hours of video, equivalent to more than 58,000 clips along with task-based self-reported ground truth labels for arousal, valence, and cognitive load attributes such as mental demand, temporal demand, effort, and a few others. We believe AVCAffe would be a challenging benchmark for the deep learning research community given the inherent difficulty of classifying affect and cognitive load in particular. Moreover, our dataset fills an existing timely gap by facilitating the creation of learning systems for better self-management of remote work meetings, and further study of hypotheses regarding the impact of remote work on cognitive load and affective states.</p>
+        </tr>
+    </table>
+    <br>
+    <!--------------------- Statistics --------------------->
+    <table align=center>
+        <center>
+            <h1>
+                AVCAffe Statistics
+            </h1>
+        </center>
+    </table>
+    <table style="height: 360px; width: 100%; border-style: solid; border-color: #000000; background-color: #faf9f6; margin-left: auto; margin-right: auto;" border="black">
+        <thead>
+        <tr style="height: 18px;">
+        <th align="left" style="height: 18px; width: 126.062px;">Attribute</th>
+        <th align="left" style="height: 18px; width: 290.938px;">Details</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr style="height: 18px;">
+        <td align="left" style="height: 18px; width: 126.062px;">Total participants</td>
+        <td align="left" style="height: 18px; width: 290.938px;">106</td>
+        </tr>
+        <tr style="height: 54px;">
+        <td align="left" style="height: 54px; width: 126.062px;">Gender stats.</td>
+        <td align="left" style="height: 54px; width: 290.938px;">Male: 52 or 49% <br />Female: 53 or 50% <br />Non-Binary: 1 or 0.01%</td>
+        </tr>
+        <tr style="height: 90px;">
+        <td align="left" style="height: 90px; width: 126.062px;">Age stats.</td>
+        <td align="left" style="height: 90px; width: 290.938px;">18 to 20: 8 <br />21 to 30: 75 <br />31 to 40: 17 <br />41 to 50: 2 <br />51 to 60: 4</td>
+        </tr>
+        <tr style="height: 36px;">
+        <td align="left" style="height: 36px; width: 126.062px;">Country of origins</td>
+        <td align="left" style="height: 36px; width: 290.938px;">Bangladesh, Brazil, Canada, China, Ecuador, Egypt, Germany, Hong Kong, India, Iran, Ireland, Jordan, Mexico, Nigeria, Pakistan, Sweden, USA, Vietnam</td>
+        </tr>
+        <tr style="height: 18px;">
+        <td align="left" style="height: 18px; width: 126.062px;">Total hours</td>
+        <td align="left" style="height: 18px; width: 290.938px;">108 Hours</td>
+        </tr>
+        <tr style="height: 18px;">
+        <td align="left" style="height: 18px; width: 126.062px;">Total clips</td>
+        <td align="left" style="height: 18px; width: 290.938px;">58118</td>
+        </tr>
+        <tr style="height: 18px;">
+        <td align="left" style="height: 18px; width: 126.062px;">Modalities</td>
+        <td align="left" style="height: 18px; width: 290.938px;">Audio, Video</td>
+        </tr>
+        <tr style="height: 54px;">
+        <td align="left" style="height: 54px; width: 126.062px;">Ground truths</td>
+        <td align="left" style="height: 54px; width: 290.938px;">Arousal, Valence, <br>Mental Demand, Temporal Demand, Effort, Physical Demand, Frustration, Performance</td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <!--------------------- Commercial Use --------------------->
+    <!-- <table align=center>
+        <center>
+            <h1>
+                Commercial Use
+            </h1>
+        </center>
+        <tr>
+            <p style="text-align: justify;">
+            This dataset is freely available for any research purpose. 
+            For any commercial purpose of use, please contact us using the link: 
+            <a href="mailto:pritam.sarkar@queensu.ca;ali.etemad@queensu.ca?subject=AVCAffe: Request for Commercial Use">AVCAffe: Request for Commercial Use</a>
+            </p>
+        </tr>
+    </table>
+    <br> -->
+
+    <!--------------------- Terms and Conditions --------------------->
+    <table align=center>
+        <center>
+            <h1>
+                Terms and Conditions
+            </h1>
+        </center>
+        <tr>
+            <p style="text-align: justify;">
+            This dataset is freely available for non-commercial research purpose only.
+            Please read carefully the terms and conditions before you download and/or use the AVCAffe Dataset. By downloading and/or using the Data, you acknowledge that you have read these terms and conditions mentioned, understand them, and agree to be bound by them. If you do not agree with these terms and conditions, you must not download and/or use the Data. Any infringement of the terms of this agreement will automatically terminate your rights under this license. The License agreement can be found here: <a href="../LICENSE">AVCAffe Dataset License for Non-commercial and Scientific Research</a>
+            </p>
+        </tr>
+    </table>
+    <!-- <br> -->
+    
+
+    <!--------------------- Download --------------------->
+    <table align=center>
+        <center>
+            <h1>
+                Download
+            </h1>
+        </center>
+        <tr>
+            <p style="text-align: center;">
+            Please see the download and installation instructions here: <a href="../README.md">README.md</a>. 
+            </p>
+        </tr>
+    </table>
+    <!-- <br> -->
+
+    <!--------------------- citation --------------------->
+    <table align=center>
+        <center>
+            <h1>
+                Citation
+            </h1>
+        </center>
+        <tr>
+            <p style="text-align: center;">
+            Please cite our paper using the given BibTeX entry.
+            </p>
+        </tr>
+    </table>
+    <table border="0" style="height: 134px; width: 100%; border-collapse: collapse; background-color: #faf9f6; border-color: #000000; border-style: inset; margin-left: auto; margin-right: auto;" height="134">
+        <tbody>
+            <tr>
+            <td style="width: 100%;"><code>@misc{sarkar2022avcaffe,</code><br /><code>title={AVCAffe: A Large Scale AudioVisual Dataset of Cognitive Load and Affect}, </code><br /><code>author={Pritam Sarkar and Aaron Posen and Ali Etemad},</code><br /><code>year={2022},</code><br /><code>eprint={2203.00000},</code><br /><code>archivePrefix={arXiv},</code><br /><code>primaryClass={cs.CV}}</code><br /></td>
+            </tr>
+        </tbody>
+    </table>
+
+	<br> <br> <hr>
+    <!--------------------- acknowledgement --------------------->
+    <table align=center width=950px>
+        <center>
+            <h1>
+                Acknowledgements
+            </h1>
+        </center>
+        <tr>
+            <p style="text-align: justify;">
+                We are grateful to <strong>Bank of Montreal</strong> and <strong>Mitacs</strong> for funding this research. We are also thankful to <strong>SciNet HPC Consortium</strong> for helping with the computation resources. We thank <strong>Shuvendu Roy</strong>, Dept. of Electrical and Computer Engineering, at Queen's University for his collaboration during this study. We would like to further thank <strong>Prof. Kevin Munhall</strong>, Dept. of Psychology, at Queen's University for helping us with the initial layout of the study design. 
+            </p>
+        </tr>
+    </table>
+
+    <!--------------------- Question --------------------->    
+
+    <table align=center width=950px>
+        <center>
+            <h1>
+                Question
+            </h1>
+        </center>
+        <tr>
+            <p>
+                You may directly contact me at <a href="mailto:pritam.sarkar@queensu.ca">pritam.sarkar@queensu.ca</a> or connect with me on <a href="https://www.linkedin.com/in/sarkarpritam/">LinkedIn</a>.
+            </p>
+        </tr>
+    </table>
+
+</html>
+
