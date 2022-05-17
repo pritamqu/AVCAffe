@@ -3,7 +3,7 @@ AVCAffe: A Large Scale Audio-Visual Dataset of Cognitive Load and Affect for Rem
 </h1>
 
 <h3 align="center">
-Preprint. Under review.
+Under review.
 </h3>
 
 <h3 align="center">
