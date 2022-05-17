@@ -17,5 +17,5 @@ Under review.
 </h3>
 
 
-
+This is the official code repository of AVCAffe. Please check the project website: https://pritamqu.github.io/AVCAffe/ for additional details.
 Details are coming soon...
