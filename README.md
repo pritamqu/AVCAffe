@@ -3,7 +3,7 @@ AVCAffe: A Large Scale Audio-Visual Dataset of Cognitive Load and Affect for Rem
 </h1>
 
 <h3 align="center">
-AAAI 2023.
+AAAI 2023
 </h3>
 
 <h3 align="center">
