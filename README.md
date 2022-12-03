@@ -20,7 +20,7 @@ AAAI 2023
 </h3>
 
 
-This is the official code repository of AVCAffe. Please check the project website: https://pritamqu.github.io/AVCAffe/ for additional details. Before you download and/or use the AVCAffe Dataset, please make sure you have read the Database License Agreement available here: [DLA](./LICENSE.html).
+This is the official code repository of AVCAffe. Please check the project website: https://pritamqu.github.io/AVCAffe/ for additional details. Before you download and/or use the AVCAffe Dataset, please make sure you have read the Database License Agreement available here: [DLA](./docs/LICENSE.html).
 
 <!-- ### Items available -->
 ### Updates
@@ -145,12 +145,12 @@ sample = db.__getitem__(1)
 
 ```
 
-### Additional Details
+### Additional IMPORTANT Details
 
 We list some of the additional details here:
+- **the list of participants who agree to use their faces/images/videos for article or accopanied media contents, are available in `info/public_face_ids.txt`.**
 - participants used for training and validation splits are mentioned in `info/train.txt` and `info/val.txt` respectively.
 - the outcomes of prestudy questionnaire are available in `info/prestudy_response.csv`.
-- the list of participants who agree to use their faces/images/videos for article or accopanied media contents, are available in `info/public_face_ids.txt`.
 - some of the clips available in `shorter_segments` have no speech when the participant were listening to the other participant or thinking or trying to solve the tasks, the file ids of such clips are available in `info/no_audio_files.txt`.
 
 
