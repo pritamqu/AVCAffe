@@ -43,21 +43,21 @@ The directory structure of the dataset is as follows.
 ```    
     ├── ..                              # total size = 34.7 GB
     ├── ground_truths                   # size = 192 KB
-    ├── info
-    ├── videos                          # size = 552 KB
-    |   │   ├── per_participant_per_task    # size = 13.9 GB
+    ├── info                            # size = 552 KB
+    ├── videos                          
+    |   │   ├── per_participant_per_task    # size = 13.9 GB; 950 files
     │   │   ├── aiim001
     │   │   ├── aiim002
     │   │   ├── ...
     │   │   ├── ...
     │   │   └── aiim108
-    │   └── shorter_segments            # size = 20.3 GB
+    │   └── shorter_segments            # size = 20.3 GB; 58112 files
     │       ├── aiim001 
     │       ├── aiim002
     │       ├── ...
     │       ├── ...
     │       └── aiim108
-    └── images                         
+    └── images  (not available at the moment)                       
         └── shorter_segments_face    # size = 41.7 GB
            ├── aiim001
            ├── aiim002
