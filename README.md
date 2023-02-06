@@ -16,11 +16,12 @@ AAAI 2023
 <a href="https://arxiv.org/pdf/2205.06887.pdf">[Paper]</a>   <!-- change with aaai link -->
 <a href="./docs/assets/files/avcaffe_supp.pdf"> [Appendix]</a> 
 <a href="https://arxiv.org/pdf/2205.06887.pdf"> [ArXiv]</a> 
-<a href="https://github.com/pritamqu/AVCAffe"> [Code]</a>  <a href="https://pritamqu.github.io/AVCAffe/"> [Website]</a>
+<!-- <a href="https://github.com/pritamqu/AVCAffe"> [Code]</a>   -->
+<a href="https://pritamqu.github.io/AVCAffe/"> [Website]</a>
 </h3>
 
 
-This is the official code repository of AVCAffe. Please check the project website: https://pritamqu.github.io/AVCAffe/ for additional details. Before you download and/or use the AVCAffe Dataset, please make sure you have read the Database License Agreement available here: [DLA](./docs/LICENSE.html).
+This is the official code repository of AVCAffe. Please check the project website: https://pritamqu.github.io/AVCAffe/ for additional details. Before you download and/or use the AVCAffe Dataset, please make sure you have read the Database License Agreement available here: [DLA](https://pritamsarkar.com/AVCAffe/LICENSE.html).
 
 <!-- ### Items available -->
 ### Updates
