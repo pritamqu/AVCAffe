@@ -63,7 +63,7 @@ def main():
                 if name.endswith('.zip'):
                     new_dir = name[:-4]
                     os.makedirs(new_dir, exist_ok=True)
-                    shutil.unpack_archive(name, new_path, 'zip')
+                    shutil.unpack_archive(name, new_dir, 'zip')
                     os.remove(name)
     else:
         print("Cannot get the dataset")
