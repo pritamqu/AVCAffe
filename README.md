@@ -13,7 +13,7 @@ AAAI 2023
 </h3>
 
 <h3 align="center"> 
-<a href="https://arxiv.org/pdf/2205.06887.pdf">[Paper]</a>   <!-- change with aaai link -->
+<a href="https://doi.org/10.1609/aaai.v37i1.25078">[Paper]</a>   <!-- change with aaai link -->
 <a href="./docs/assets/files/avcaffe_supp.pdf"> [Appendix]</a> 
 <a href="https://arxiv.org/pdf/2205.06887.pdf"> [ArXiv]</a> 
 <!-- <a href="https://github.com/pritamqu/AVCAffe"> [Code]</a>   -->
@@ -31,7 +31,7 @@ This is the official code repository of AVCAffe. Please check the project websit
 - [x] Dataloader code
 - [ ] Database release
     - [x] Audio-visual recordings, ground truths, and additional meta data
-    - [ ] Face-crops (coming soon, pending due to some technical issues)
+    - [x] Face-crops (released on 20 July 2023, please see note below, if you already downloaded the old version.)
 
 
 
@@ -58,13 +58,13 @@ The directory structure of the dataset is as follows.
     │       ├── ...
     │       ├── ...
     │       └── aiim108
-    └── images  (not available at the moment)                       
+    └── face_crops                       
         └── shorter_segments_face    # size = 41.7 GB
-           ├── aiim001
-           ├── aiim002
+           ├── aiim001_task_1.zip
+           ├── aiim001_task_2.zip
            ├── ...
            ├── ...
-           └── aiim108
+           └── aiim108_task_9.zip
 
 ```
 
@@ -72,7 +72,7 @@ The directory structure of the dataset is as follows.
 - `info` contains additional meta data, e.g., train-val split, pre-study responses, etc. Please find details below. 
 - `videos/per_participant_per_task` contains full length videos of each participant per each task. Video length of 2.5-10 minutes, resolution of 640x360 pixel, format `.mp4`.  
 - `videos/shorter_segments` contains segmented clips of the same videos in `per_participant_per_task`. Video length approximately 6 seconds, resized the shorter side at 256 pixel, format `.avi`. Note, the shorter clips are prepared for easy and efficient to use to train deep learning models. 
-- `images/shorter_segments_face` contains the face crops of the participants. To train the baseline models we use just the face-crops instead of the full frames, which works better (at-least for simple models).
+- `face_crops/shorter_segments_face` contains the face crops of the participants. To train the baseline models we use just the face-crops instead of the full frames, which works better (at-least for simple models).
 
 ### How to Request Access?
 
@@ -85,7 +85,7 @@ Please go to this link to create an account: https://borealisdata.ca/loginpage.x
 Once you have an account, and signed in on the same browser simply click on this link https://borealisdata.ca/dataverseuser.xhtml?selectTab=apiTokenTab, it will show the your `API Token`. Alternatively, you can click on the drop down list shown under your name (top right corner), and click `API Token`. Please note the `API Token` which will be required at future step.
 
 **Step 3:** 
-Once the account is created please go to this link https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/PSWY62. **Select all 1,918 files in this dataset** and **Request Access**. Please read the **Terms of Use** and **Terms of Access** and **Accecpt** to submit a request. Please see the screenshot below.
+Once the account is created please go to this link https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/PSWY62. **Select all ~1,918~ 59960 files in this dataset** and **Request Access**. Please read the **Terms of Use** and **Terms of Access** and **Accecpt** to submit a request. Please see the screenshot below. This screenshot was taken before the face crops are uploaded. Now, the number of total files and size are changed.
 
 ![step 3](./docs/assets/images/request_access.png)
 
@@ -122,6 +122,15 @@ python codes/downloader/downloader.py
 **Step 6:**
 Congratualations! The dataset is downloaded.
 
+**Updates on 20 July 2023**
+
+We have now released the face crops. In case you have already downloaded this dataset before 20 July 2023, you may just download the face crops by following the given instruction [here](https://github.com/pritamqu/AVCAffe/issues/6#issuecomment-1652240043). If you encounter an error, please create an issue, I will look into it.
+
+<!-- 
+```
+# TODO: update the downloader code to just download these files.
+# TODO: test the downloader code for full download, and check the unzip path is not messed up.
+``` -->
 
 ### Dataloader
 

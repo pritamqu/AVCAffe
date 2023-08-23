@@ -3,7 +3,7 @@ import os
 import sys
 import shutil
 
-API_TOKEN = ""
+API_TOKEN = "" # mention your API token here
 SERVER_URL = "https://borealisdata.ca"
 PERSISTENT_ID = "doi:10.5683/SP3/PSWY62"
 DATABASE_NAME = "data"
