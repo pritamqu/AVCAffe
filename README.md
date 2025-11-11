@@ -29,7 +29,7 @@ This is the official code repository of AVCAffe. Please check the project websit
 - [x] Database license agreement
 - [x] Instruction to download
 - [x] Dataloader code
-- [ ] Database release
+- [x] Database release
     - [x] Audio-visual recordings, ground truths, and additional meta data
     - [x] Face-crops (released on 20 July 2023, please see note below, if you already downloaded the old version.)
 
@@ -178,5 +178,6 @@ primaryClass={cs.HC}}
 
 ### Question
 You may directly contact me at <pritam.sarkar@queensu.ca> or connect with me on [LinkedIn](https://www.linkedin.com/in/sarkarpritam/).
+
 
 
