@@ -126,6 +126,12 @@ Congratualations! The dataset is downloaded.
 
 We have now released the face crops. In case you have already downloaded this dataset before 20 July 2023, you may just download the face crops by following the given instruction [here](https://github.com/pritamqu/AVCAffe/issues/6#issuecomment-1652240043). If you encounter an error, please create an issue, I will look into it.
 
+
+**Updates on 07 Dec 2025**
+
+Due to technical challenges, all access granted before 2025 has been revoked. If you need to download the data again, please submit a new access request as previously outlined. Going forward, access will be granted for 30 days only. Please ensure that you complete all downloads within this period.
+
+
 <!-- 
 ```
 # TODO: update the downloader code to just download these files.
@@ -178,6 +184,7 @@ primaryClass={cs.HC}}
 
 ### Question
 You may directly contact me at <pritam.sarkar@queensu.ca> or connect with me on [LinkedIn](https://www.linkedin.com/in/sarkarpritam/).
+
 
 
 
